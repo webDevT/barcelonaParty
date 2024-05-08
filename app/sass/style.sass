@@ -1,0 +1,297 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body 
+    background: #F2F2FF
+    font-family: $main-font
+    font-size: 18px
+    color: $black
+    margin: 0 
+    padding: 0
+    line-height: 1.4
+* 
+    box-sizing: border-box
+img 
+    height: auto
+.container 
+    width: 1144px
+    margin-left: auto 
+    margin-right: auto
+    max-width: 92vw
+.sub-title  
+    font-size: 15px 
+    font-weight: 700
+    display: flex 
+    justify-content: center 
+    align-items: center
+    margin-bottom: 24px
+    padding: 1px
+    border-radius: 17px
+    background: linear-gradient(90deg, #2EABE1 0%, #7F00FF 100%)
+    .sub-title__wrapper 
+        background: #E7E8FF
+        padding: 4.5px 10px
+        border-radius: 17px
+.sub-title__text
+    background: linear-gradient(90deg, #2EABE1 0%, #7F00FF 100%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    background-clip: text
+    text-fill-color: transparent
+    
+.h1  
+    font-size: 76px 
+    font-weight: 800
+    text-align: center
+    line-height: 1
+    margin-top: 0 
+    margin-bottom: 0
+    font-family: $title-font
+    span 
+        background: linear-gradient(90deg, #2EABE1 0%, #7F00FF 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+.h2 
+    font-size: 60px 
+    font-weight: 700
+    font-family: $title-font
+    line-height: 1
+    margin-top: 0
+    margin-bottom: 32px
+    span 
+        background: linear-gradient(90deg, #2EABE1 0%, #7F00FF 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+.h3 
+    margin-top: 0
+    margin-bottom: 0
+    font-size: 24px
+    font-weight: 700
+    font-family: $secondary-font
+.button-wrapper
+    background: linear-gradient(90deg, #2EABE1 0%, #7F00FF 100%)
+    color: #fff
+    font-weight: 700 
+    font-size: 19px
+    text-transform: uppercase
+    padding: 14px 44px
+    border-radius: 58px
+    display: flex 
+    justify-content: center
+    align-items: center
+    transition: all .3s
+    box-shadow: -10px 10px 150px 0px rgba(33, 14, 255, 0.23), 0px 0px 10px 0px rgba(39, 100, 218, 0.52)
+    img 
+        display: block 
+        margin-left: 10px
+.button
+    text-decoration: none
+    padding: 1px 
+    background: linear-gradient(90deg, #FFFFFF, #7C06FE)
+    border-radius: 58px
+.button:hover 
+    color: #fff 
+    background: #5160ee 
+    .button-wrapper
+        background: #5160ee 
+.row
+    display: flex 
+    justify-content: space-between
+    width: 100%
+.col-4 
+    width: 31%
+.col-6 
+    width: 50%
+.list-item
+    display: flex 
+    padding-top: 8px 
+    padding-bottom: 8px
+    position: relative
+    padding-left: 30px
+    font-weight: 700
+.list-item:before 
+    content: ''
+    width: 20px 
+    min-width: 20px
+    height: 20px 
+    background: url('../img/check.svg')
+    background-size: 100%
+    background-repeat: no-repeat
+    position: absolute 
+    top: 10px
+    left: 0
+    margin-right: 8px
+.list
+    width: 630px
+    max-width: 100%
+    margin-left: auto 
+    margin-right: auto
+    padding-bottom: 24px
+    display: flex
+    flex-direction: column 
+    align-items: center
+.image 
+    max-width: 100%
+    display: block
+    margin-left: auto 
+    margin-right: auto
+.bold 
+    font-weight: 700
+p 
+    margin-bottom: 0
+    font-size: 18px 
+    font-weight: 600
+    margin-bottom: 32px
+//end global style
+
+//start header style
+.header 
+    padding-top: 37px 
+    padding-bottom: 37px
+    .container 
+        display: flex 
+        justify-content: center 
+        align-items: center
+//end header style
+
+//start main screen style
+.main-screen 
+    padding-top: 37px
+    padding-bottom: 27px
+    .button 
+        position: relative
+        z-index: 99
+    .list 
+        z-index: 99
+        position: relative
+    .h1 
+        margin-top: 20px
+    .container
+        display: flex 
+        flex-direction: column 
+        align-items: center
+    .list 
+        margin-top: 25px
+        margin-bottom: 10px
+    .sub-title 
+        margin-bottom: 0
+    .list-item:last-child .bold 
+        margin-left: 0
+.main-screen__image 
+    max-width: 100%
+    height: auto
+    margin-top: -120px
+//end main screen style
+
+//start themes style
+.themes
+
+    .row 
+        align-items: center
+    .image 
+        transform: translateX(10%)
+        margin-top: -50px
+    .h2 
+        white-space: nowrap
+        margin-bottom: 0
+    .col-8 
+        overflow: hidden
+.themes__content 
+    display: flex 
+    flex-direction: column 
+    align-items: flex-start  
+
+//end themes style
+
+//start how it work style 
+.how-it-work
+    margin-top: -50px
+    .container 
+        display: flex 
+        flex-direction: column 
+        align-items: center
+.how-it-work__header
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 665px 
+    max-width: 100%
+    text-align: center 
+    margin-bottom: 40px
+    margin-left: auto 
+    margin-right: auto
+    .h2 
+        margin-bottom: 0
+.how-it-work__item
+    text-align: center
+    img 
+        width: 100%
+    p 
+        margin-top: 5px
+.how-it-work
+    .button 
+        margin-top: 50px
+
+.how-it-work__image
+    box-shadow: -10px 10px 60px rgba(44, 213, 236, 0.16), 0px 0px 10px rgba(44, 224, 236, 0.38)
+    border-radius: 10px
+//end how it work style
+
+
+//start footer style
+.footer
+    padding-bottom: 60px
+    .container 
+        display: flex 
+        flex-direction: column 
+        align-items: center
+.copy 
+    font-size: 14px
+    margin-bottom: 12px
+    margin-top: 20px
+.footer-link
+    font-size: 13px 
+    text-decoration: underline
+    color: #909090
+//end footer style 
+
+//start fix btn 
+.fix-wrapper
+    position: fixed 
+    bottom: 10px 
+    left: 50% 
+    transform: translateX(-50%)
+    background: #fff
+    display: none 
+    align-items: center
+    padding: 10px 24px
+    border-radius: 50px
+    .button .button-wrapper
+        font-size: 13px 
+        padding-top: 10px 
+        padding-bottom: 10px
+        padding-left: 25px 
+        padding-right: 25px
+.fix-wrapper__text
+    font-size: 21px 
+    font-weight: 600
+    margin-right: 11px
+.fix-wrapper
+    white-space: nowrap
+//end fix btn
+.list-item
+    display: block
+    .bold 
+        margin-left: 4px 
+        margin-right: 4px
+        //white-space: nowrap
+        
+@import "media"
+
+
+
