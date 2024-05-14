@@ -73,6 +73,13 @@ img
     font-size: 24px
     font-weight: 700
     font-family: $secondary-font
+    span
+        background: linear-gradient(90deg, #2EABE1 0%, #7F00FF 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+        font-weight: 700
 .button-wrapper
     background: linear-gradient(90deg, #2EABE1 0%, #7F00FF 100%)
     color: #fff
@@ -112,29 +119,20 @@ img
     padding-top: 8px 
     padding-bottom: 8px
     position: relative
-    padding-left: 30px
     font-weight: 700
-.list-item:before 
-    content: ''
-    width: 20px 
-    min-width: 20px
-    height: 20px 
-    background: url('../img/check.svg')
-    background-size: 100%
-    background-repeat: no-repeat
-    position: absolute 
-    top: 10px
-    left: 0
-    margin-right: 8px
+
 .list
     width: 630px
     max-width: 100%
     margin-left: auto 
     margin-right: auto
-    padding-bottom: 24px
+    padding-bottom: 0
     display: flex
     flex-direction: column 
     align-items: center
+    margin-left: auto 
+    margin-right: auto
+    margin-bottom: 0
 .image 
     max-width: 100%
     display: block
@@ -147,6 +145,13 @@ p
     font-size: 18px 
     font-weight: 600
     margin-bottom: 32px
+    span
+        background: linear-gradient(90deg, #2EABE1 0%, #7F00FF 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+        font-weight: 700
 //end global style
 
 //start header style
@@ -163,6 +168,12 @@ p
 .main-screen 
     padding-top: 37px
     padding-bottom: 27px
+    p 
+        width: 600px 
+        max-width: 100% 
+        margin-left: auto 
+        margin-right: auto
+        text-align: center
     .button 
         position: relative
         z-index: 99
@@ -176,7 +187,7 @@ p
         flex-direction: column 
         align-items: center
     .list 
-        margin-top: 25px
+        margin-top: 0px
         margin-bottom: 10px
     .sub-title 
         margin-bottom: 0
@@ -290,7 +301,35 @@ p
         margin-left: 4px 
         margin-right: 4px
         //white-space: nowrap
-        
+//start languages style
+.lenguages
+    position: absolute
+    width: 100% 
+    top: 48px
+    .container 
+        display: flex 
+        justify-content: flex-end 
+        align-items: center
+    select 
+        background: transparent
+        border: none
+        font-size: 18px
+        font-weight: 700
+        padding-right: 20px
+        background: url('../img/arrow.svg')
+        background-repeat: no-repeat
+        background-position: right center
+        outline: none
+        cursor: pointer
+        font-family: $secondary-font
+select
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+select::-ms-expand
+    display: none
+//end languages style 
+
 @import "media"
 
 
